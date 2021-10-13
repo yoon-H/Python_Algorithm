@@ -29,6 +29,7 @@ result =[]
 stack = []
 
 for i in seq :
+    #top이 예씨 배열보다 크면 실패
     if peek(stack) > i :
         print('NO')
         break
@@ -38,6 +39,7 @@ for i in seq :
                 pop(stack)
                 result.append('-')
                 break
+            #i까지 넣기
             else :
                 push(stack, com[0])
                 del com[0]
